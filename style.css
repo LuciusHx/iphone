@@ -14,12 +14,22 @@ body {
     gap: 1em;
 }
 
+#product-list {
+    display: flex;
+    gap: 2em;
+}
+
 .card {
     background-color: whitesmoke;
     width: 180px;
-    height: 200px;
+    height: 310px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
